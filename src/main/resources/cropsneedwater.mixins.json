@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "gay.blackfur.cropsneedwater.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "cropsneedwater.refmap.json",
+  "mixins": [
+    "BlockBehaviourMixin",
+    "BlockMixin",
+    "HoeTillMixin",
+    "configured.WaterloggedBonemealMixin",
+    "configured.WaterloggedMarker",
+    "configured.WaterloggedSpreadMixin",
+    "configured.WaterloggedStateMixin",
+    "configured.WaterloggedSurvivalMixin",
+    "configured.WaterloggedTickMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
