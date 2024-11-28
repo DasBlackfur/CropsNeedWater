@@ -65,7 +65,12 @@ public class MixinTransformer implements ITransformer<ClassNode> {
                 "    \"net.minecraft.world.level.block.CropBlock\",\n" +
                 "    \"net.minecraft.world.level.block.FarmBlock\",\n" +
                 "    \"net.minecraft.world.level.block.TorchflowerCropBlock\",\n" +
-                "    \"net.minecraft.world.level.block.BeetrootBlock\"\n" +
+                "    \"net.minecraft.world.level.block.BeetrootBlock\",\n" +
+                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\",\n" +
+                "    \"com.buuz135.sushigocrafting.block.plant.CustomCropBlock\",\n" +
+                "    \"com.phantomwing.rusticdelight.block.custom.CottonCropBlock\",\n" +
+                "    \"com.phantomwing.rusticdelight.block.custom.BellPepperCropBlock\",\n" +
+                "    \"com.phantomwing.rusticdelight.block.custom.CoffeeCropBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBonemealMixin\": [\n" +
                 "    \"net.minecraft.world.level.block.CropBlock\"\n" +
@@ -82,7 +87,8 @@ public class MixinTransformer implements ITransformer<ClassNode> {
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedSpreadMixin\": [\n" +
                 "    \"net.minecraft.world.level.block.BushBlock\",\n" +
-                "    \"net.minecraft.world.level.block.FarmBlock\"\n" +
+                "    \"net.minecraft.world.level.block.FarmBlock\",\n" +
+                "    \"net.mehvahdjukaar.supplementaries.common.block.blocks.FlaxBlock\"\n" +
                 "  ]\n" +
                 "}";
     }
