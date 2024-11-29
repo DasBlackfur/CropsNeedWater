@@ -17,7 +17,6 @@ public class WaterloggedSurvivalMixin {
     public void checkWaterlogging(BlockState state, LevelReader level, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
         if (state.hasProperty(BlockStateProperties.WATERLOGGED) && !state.getValue(BlockStateProperties.WATERLOGGED)) {
             cir.setReturnValue(false);
-            cir.cancel();
         }
     }
 }

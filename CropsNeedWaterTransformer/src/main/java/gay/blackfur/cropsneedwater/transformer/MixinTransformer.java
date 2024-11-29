@@ -73,10 +73,18 @@ public class MixinTransformer implements ITransformer<ClassNode> {
                 "    \"com.phantomwing.rusticdelight.block.custom.CoffeeCropBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBonemealMixin\": [\n" +
-                "    \"net.minecraft.world.level.block.CropBlock\"\n" +
+                "    \"net.minecraft.world.level.block.CropBlock\",\n" +
+                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
+                "  ],\n" +
+                "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBonemealWithUpdateMixin\": [\n" +
+                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedTickMixin\": [\n" +
-                "    \"net.minecraft.world.level.block.CropBlock\"\n" +
+                "    \"net.minecraft.world.level.block.CropBlock\",\n" +
+                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
+                "  ],\n" +
+                "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedTickWithUpdateMixin\": [\n" +
+                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedSurvivalMixin\": [\n" +
                 "    \"net.minecraft.world.level.block.CropBlock\"\n" +
@@ -89,6 +97,9 @@ public class MixinTransformer implements ITransformer<ClassNode> {
                 "    \"net.minecraft.world.level.block.BushBlock\",\n" +
                 "    \"net.minecraft.world.level.block.FarmBlock\",\n" +
                 "    \"net.mehvahdjukaar.supplementaries.common.block.blocks.FlaxBlock\"\n" +
+                "  ],\n" +
+                "  \"gay.blackfur.cropsneedwater.mixin.configured.immersive_engineering.CanGrowTopMixin\": [\n" +
+                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
                 "  ]\n" +
                 "}";
     }

@@ -9,11 +9,14 @@
     "BlockMixin",
     "HoeTillMixin",
     "configured.WaterloggedBonemealMixin",
+    "configured.WaterloggedBonemealWithUpdateMixin",
     "configured.WaterloggedMarker",
     "configured.WaterloggedSpreadMixin",
     "configured.WaterloggedStateMixin",
     "configured.WaterloggedSurvivalMixin",
-    "configured.WaterloggedTickMixin"
+    "configured.WaterloggedTickMixin",
+    "configured.WaterloggedTickWithUpdateMixin",
+    "configured.immersive_engineering.CanGrowTopMixin"
   ],
   "client": [
   ],
