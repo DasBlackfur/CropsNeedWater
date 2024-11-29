@@ -8,6 +8,7 @@
     "BlockBehaviourMixin",
     "BlockMixin",
     "HoeTillMixin",
+    "configured.WaterloggedBlacklist",
     "configured.WaterloggedBonemealMixin",
     "configured.WaterloggedBonemealWithUpdateMixin",
     "configured.WaterloggedMarker",

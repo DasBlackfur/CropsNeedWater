@@ -1,6 +1,7 @@
 package gay.blackfur.cropsneedwater.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
+import gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBlacklist;
 import gay.blackfur.cropsneedwater.mixin.configured.WaterloggedMarker;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.Block;
@@ -22,7 +23,7 @@ public interface HoeTillMixin {
     @Redirect(method = "getToolModifiedState", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/Block;defaultBlockState()Lnet/minecraft/world/level/block/state/BlockState;"))
     private BlockState waterloggedIfUnderwater(Block instance, @Local(argsOnly = true) UseOnContext context) {
         var state = instance.defaultBlockState();
-        if (instance instanceof WaterloggedMarker && context.getLevel().getBlockState(context.getClickedPos().above()).is(Blocks.WATER)) {
+        if (instance instanceof WaterloggedMarker && !(this instanceof WaterloggedBlacklist) && context.getLevel().getBlockState(context.getClickedPos().above()).is(Blocks.WATER)) {
             state = state.setValue(BlockStateProperties.WATERLOGGED, true);
         }
         return state;
