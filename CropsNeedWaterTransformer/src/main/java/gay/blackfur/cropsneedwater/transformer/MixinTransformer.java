@@ -89,14 +89,17 @@ public class MixinTransformer implements ITransformer<ClassNode> {
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedSurvivalMixin\": [\n" +
                 "    \"net.minecraft.world.level.block.CropBlock\"\n" +
                 "  ],\n" +
-                "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedMarker\": [\n" +
-                "    \"net.minecraft.world.level.block.CropBlock\",\n" +
-                "    \"net.minecraft.world.level.block.FarmBlock\"\n" +
-                "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedSpreadMixin\": [\n" +
                 "    \"net.minecraft.world.level.block.BushBlock\",\n" +
                 "    \"net.minecraft.world.level.block.FarmBlock\",\n" +
                 "    \"net.mehvahdjukaar.supplementaries.common.block.blocks.FlaxBlock\"\n" +
+                "  ],\n" +
+                "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedMarker\": [\n" +
+                "    \"net.minecraft.world.level.block.CropBlock\",\n" +
+                "    \"net.minecraft.world.level.block.FarmBlock\"\n" +
+                "  ],\n" +
+                "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBlacklist\": [\n" +
+                "    \"com.buuz135.sushigocrafting.block.plant.WaterCropBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.immersive_engineering.CanGrowTopMixin\": [\n" +
                 "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
