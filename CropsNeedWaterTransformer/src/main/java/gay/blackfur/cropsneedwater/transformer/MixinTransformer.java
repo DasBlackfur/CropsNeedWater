@@ -70,7 +70,10 @@ public class MixinTransformer implements ITransformer<ClassNode> {
                 "    \"com.buuz135.sushigocrafting.block.plant.CustomCropBlock\",\n" +
                 "    \"com.phantomwing.rusticdelight.block.custom.CottonCropBlock\",\n" +
                 "    \"com.phantomwing.rusticdelight.block.custom.BellPepperCropBlock\",\n" +
-                "    \"com.phantomwing.rusticdelight.block.custom.CoffeeCropBlock\"\n" +
+                "    \"com.phantomwing.rusticdelight.block.custom.CoffeeCropBlock\",\n" +
+                "    \"vectorwing.farmersdelight.common.block.TomatoVineBlock\",\n" +
+                "    \"net.minecraft.world.level.block.StemBlock\",\n" +
+                "    \"net.minecraft.world.level.block.AttachedStemBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBonemealMixin\": [\n" +
                 "    \"net.minecraft.world.level.block.CropBlock\",\n" +
@@ -79,24 +82,41 @@ public class MixinTransformer implements ITransformer<ClassNode> {
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBonemealWithUpdateMixin\": [\n" +
                 "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
                 "  ],\n" +
+                "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBonemealInterfaceMixin\": [\n" +
+                "    \"net.minecraft.world.level.block.StemBlock\"\n" +
+                "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedTickMixin\": [\n" +
                 "    \"net.minecraft.world.level.block.CropBlock\",\n" +
-                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
+                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\",\n" +
+                "    \"vectorwing.farmersdelight.common.block.TomatoVineBlock\",\n" +
+                "    \"net.minecraft.world.level.block.StemBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedTickWithUpdateMixin\": [\n" +
-                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\"\n" +
+                "    \"blusunrize.immersiveengineering.common.blocks.plant.HempBlock\",\n" +
+                "    \"net.minecraft.world.level.block.StemBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedSurvivalMixin\": [\n" +
-                "    \"net.minecraft.world.level.block.CropBlock\"\n" +
+                "    \"net.minecraft.world.level.block.CropBlock\",\n" +
+                "    \"vectorwing.farmersdelight.common.block.TomatoVineBlock\"\n" +
+                "  ],\n" +
+                "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedStemFruitMixin\": [\n" +
+                "    \"net.minecraft.world.level.block.StemBlock\"\n" +
+                "  ],\n" +
+                "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedStemResetMixin\": [\n" +
+                "    \"net.minecraft.world.level.block.AttachedStemBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedSpreadMixin\": [\n" +
                 "    \"net.minecraft.world.level.block.BushBlock\",\n" +
                 "    \"net.minecraft.world.level.block.FarmBlock\",\n" +
-                "    \"net.mehvahdjukaar.supplementaries.common.block.blocks.FlaxBlock\"\n" +
+                "    \"net.mehvahdjukaar.supplementaries.common.block.blocks.FlaxBlock\",\n" +
+                "    \"vectorwing.farmersdelight.common.block.TomatoVineBlock\",\n" +
+                "    \"net.minecraft.world.level.block.AttachedStemBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedMarker\": [\n" +
                 "    \"net.minecraft.world.level.block.CropBlock\",\n" +
-                "    \"net.minecraft.world.level.block.FarmBlock\"\n" +
+                "    \"net.minecraft.world.level.block.FarmBlock\",\n" +
+                "    \"net.minecraft.world.level.block.StemBlock\",\n" +
+                "    \"net.minecraft.world.level.block.AttachedStemBlock\"\n" +
                 "  ],\n" +
                 "  \"gay.blackfur.cropsneedwater.mixin.configured.WaterloggedBlacklist\": [\n" +
                 "    \"com.buuz135.sushigocrafting.block.plant.WaterCropBlock\"\n" +

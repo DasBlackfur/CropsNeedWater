@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 public class WaterloggedTickMixin {
     @Redirect(method = "randomTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerLevel;setBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z"))
     public boolean addWaterloggedToGrowth(ServerLevel instance, BlockPos blockPos, BlockState state, int flags) {
-        if (state.hasProperty(BlockStateProperties.WATERLOGGED)) {
+        if (state.hasProperty(BlockStateProperties.WATERLOGGED) && instance.isWaterAt(blockPos)) {
             state = state.setValue(BlockStateProperties.WATERLOGGED, true);
         }
         return instance.setBlock(blockPos, state, flags);
