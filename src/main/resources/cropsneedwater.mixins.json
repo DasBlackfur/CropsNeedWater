@@ -10,6 +10,7 @@
     "HoeTillMixin",
     "configured.WaterloggedBlacklist",
     "configured.WaterloggedBonemealInterfaceMixin",
+    "configured.WaterloggedBonemealInterfaceWithUpdateMixin",
     "configured.WaterloggedBonemealMixin",
     "configured.WaterloggedBonemealWithUpdateMixin",
     "configured.WaterloggedMarker",
@@ -20,6 +21,8 @@
     "configured.WaterloggedSurvivalMixin",
     "configured.WaterloggedTickMixin",
     "configured.WaterloggedTickWithUpdateMixin",
+    "configured.farmers_delight.BuddingGrowUpMixin",
+    "configured.farmers_delight.GrowTopMixin",
     "configured.immersive_engineering.CanGrowTopMixin"
   ],
   "client": [
