@@ -9,6 +9,7 @@
     "BlockMixin",
     "HoeTillMixin",
     "RightClickHarvestMixin",
+    "UltimineMixin",
     "configured.WaterloggedBlacklist",
     "configured.WaterloggedBonemealInterfaceMixin",
     "configured.WaterloggedBonemealInterfaceWithUpdateMixin",
