@@ -1,4 +1,4 @@
 package gay.blackfur.cropsneedwater;
 
-public interface DummyInterface {
+public interface WaterloggedBlacklist {
 }

@@ -1,7 +1,8 @@
 package gay.blackfur.cropsneedwater.mixin;
 
-import gay.blackfur.cropsneedwater.DummyInterface;
-import gay.blackfur.cropsneedwater.mixin.configured.WaterloggedMarker;
+import gay.blackfur.cropsneedwater.WaterloggedBlacklist;
+import gay.blackfur.cropsneedwater.WaterloggedWhitelist;
+import gay.blackfur.cropsneedwater.mixin.configured.WaterloggedMarkerMixin;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -16,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class BlockBehaviourMixin {
     @Inject(method = "getFluidState", at = @At("RETURN"), cancellable = true)
     public void getFluidState(BlockState state, CallbackInfoReturnable<FluidState> cir) {
-        if (this instanceof WaterloggedMarker && !(this instanceof DummyInterface) && state.getValue(BlockStateProperties.WATERLOGGED)) {
+        if (this instanceof WaterloggedWhitelist && !(this instanceof WaterloggedBlacklist) && state.getValue(BlockStateProperties.WATERLOGGED)) {
             cir.setReturnValue(Fluids.WATER.getSource(false));
         }
     }
