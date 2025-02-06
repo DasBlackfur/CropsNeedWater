@@ -9,8 +9,10 @@
     "BlockMixin",
     "HoeTillMixin",
     "LevelMixin",
+    "configured.CanGrowIntoMixin",
     "configured.WaterloggedBlacklistMixin",
     "configured.WaterloggedMarkerMixin",
+    "configured.WaterloggedPlacementMixin",
     "configured.WaterloggedSpreadMixin",
     "configured.WaterloggedStateMixin",
     "configured.WaterloggedStemFruitMixin",
@@ -18,6 +20,7 @@
     "configured.WaterloggedSurvivalMixin",
     "configured.farmers_delight.BuddingGrowUpMixin",
     "configured.farmers_delight.GrowTopMixin",
+    "configured.farmers_delight.TillRichSoilMixin",
     "configured.immersive_engineering.CanGrowTopMixin"
   ],
   "client": [

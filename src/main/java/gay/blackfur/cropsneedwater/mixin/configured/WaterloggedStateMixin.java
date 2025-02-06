@@ -1,5 +1,7 @@
 package gay.blackfur.cropsneedwater.mixin.configured;
 
+import gay.blackfur.cropsneedwater.WaterloggedBlacklist;
+import gay.blackfur.cropsneedwater.WaterloggedWhitelist;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -15,6 +17,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class WaterloggedStateMixin {
     @Inject(method = "createBlockStateDefinition", at = @At("HEAD"))
     public void addWaterloggedBlockstate(StateDefinition.Builder<Block, BlockState> builder, CallbackInfo ci) {
-        builder.add(BlockStateProperties.WATERLOGGED);
+        if (this instanceof WaterloggedWhitelist && !(this instanceof WaterloggedBlacklist)) {
+            builder.add(BlockStateProperties.WATERLOGGED);
+        }
     }
 }

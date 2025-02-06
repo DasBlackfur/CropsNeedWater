@@ -2,7 +2,6 @@ package gay.blackfur.cropsneedwater.mixin;
 
 import gay.blackfur.cropsneedwater.WaterloggedBlacklist;
 import gay.blackfur.cropsneedwater.WaterloggedWhitelist;
-import gay.blackfur.cropsneedwater.mixin.configured.WaterloggedMarkerMixin;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
