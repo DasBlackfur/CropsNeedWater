@@ -79,7 +79,9 @@ public class MixinTransformer implements ITransformer<ClassNode> {
     "vectorwing.farmersdelight.common.block.RicePaniclesBlock",
     "net.minecraft.world.level.block.StemBlock",
     "net.minecraft.world.level.block.AttachedStemBlock",
-    "de.ellpeck.actuallyadditions.mod.blocks.base.AACrops"
+    "de.ellpeck.actuallyadditions.mod.blocks.base.AACrops",
+    "dev.xkmc.youkaishomecoming.content.block.plant.CoffeaCropBlock",
+    "dev.xkmc.youkaishomecoming.content.block.plant.TeaCropBlock"
   ],
   "gay.blackfur.cropsneedwater.mixin.configured.WaterloggedSurvivalMixin": [
     "net.minecraft.world.level.block.CropBlock",
@@ -128,6 +130,9 @@ public class MixinTransformer implements ITransformer<ClassNode> {
   ],
   "gay.blackfur.cropsneedwater.mixin.configured.farmers_delight.TillRichSoilMixin": [
     "vectorwing.farmersdelight.common.block.RichSoilBlock"
+  ],
+  "gay.blackfur.cropsneedwater.mixin.configured.youkaishomecoming.SeeSkyFurtherMixin": [
+    "dev.xkmc.youkaishomecoming.content.block.plant.UdumbaraBlock"
   ]
 }
 """;

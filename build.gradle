@@ -88,10 +88,6 @@ neoForge {
             // "REGISTRYDUMP": For getting the contents of all registries.
             systemProperty 'forge.logging.markers', 'REGISTRIES'
 
-            jvmArguments.add("-Dorg.lwjgl.system.jemalloc.libname=/usr/lib/libjemalloc.so.2")
-            jvmArguments.add("-Dorg.lwjgl.openal.libname=/usr/lib/libopenal.so.1")
-            jvmArguments.add("-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:3003")
-
             // Recommended logging level for the console
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
@@ -149,6 +145,7 @@ dependencies {
     implementation "maven.modrinth:pickle-tweaks:9.0.5"
     implementation "maven.modrinth:cucumber:8.0.11"
     implementation "maven.modrinth:mystical-agriculture:8.0.14"
+    implementation "maven.modrinth:youkaishomecoming:3.0.8"
 
     compileOnly fileTree(dir: 'run/mods', include: ['*.jar'])
 

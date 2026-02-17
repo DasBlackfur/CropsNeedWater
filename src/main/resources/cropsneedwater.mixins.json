@@ -22,7 +22,8 @@
     "configured.farmers_delight.BuddingGrowUpMixin",
     "configured.farmers_delight.GrowTopMixin",
     "configured.farmers_delight.TillRichSoilMixin",
-    "configured.immersive_engineering.CanGrowTopMixin"
+    "configured.immersive_engineering.CanGrowTopMixin",
+    "configured.youkaishomecoming.SeeSkyFurtherMixin"
   ],
   "client": [
   ],
